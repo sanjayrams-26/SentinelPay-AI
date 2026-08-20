@@ -1,20 +1,3 @@
-"""
-main.py — SentinelX AI Entry Point
-──────────────────────────────────────────────────────────────────
-Start the SentinelX backend with:
-
-  uvicorn main:app --reload --port 8000
-
-Then open:
-  API Docs  → http://localhost:8000/docs
-  Health    → http://localhost:8000/api/health
-  Telemetry → http://localhost:8000/api/telemetry
-
-For production, remove --reload and add --workers 1:
-  uvicorn main:app --host 0.0.0.0 --port 8000 --workers 1
-──────────────────────────────────────────────────────────────────
-"""
-
 import os
 import sys
 
