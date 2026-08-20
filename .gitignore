@@ -1,0 +1,71 @@
+# ============================================================
+#  SentinelX AI — .gitignore
+#  Protects secrets, databases, and generated files from
+#  being accidentally committed to version control.
+# ============================================================
+
+# ── Secrets & API Keys ──────────────────────────────────────
+# Never commit your API keys or environment config
+.env
+.env.*
+.env.local
+.env.production
+*.secret
+
+# ── Database Files ──────────────────────────────────────────
+# SQLite database contains live scan data — excluded from git
+sentinelx.db
+sentinelx.db-wal
+sentinelx.db-shm
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Python Bytecode & Cache ─────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ── Virtual Environments ────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+.python-version
+
+# ── Logs ────────────────────────────────────────────────────
+logs/
+*.log
+sentinelx_*.log
+
+# ── OS & Editor Junk ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Frontend Build Artifacts ────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── Test & Coverage ─────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.egg-info/
+dist/
+build/
+
+# ── Temporary / Scratch Files ───────────────────────────────
+tmp/
+*.tmp
+*.bak
+*.orig
