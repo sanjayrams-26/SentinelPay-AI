@@ -1,5 +1,5 @@
 # ============================================================
-#  SentinelX AI — .gitignore
+#  SentinelPay AI — .gitignore
 #  Protects secrets, databases, and generated files from
 #  being accidentally committed to version control.
 # ============================================================
@@ -13,10 +13,10 @@
 *.secret
 
 # ── Database Files ──────────────────────────────────────────
-# SQLite database contains live scan data — excluded from git
-sentinelx.db
-sentinelx.db-wal
-sentinelx.db-shm
+# SQLite database contains application and risk data
+sentinelpay.db
+sentinelpay.db-wal
+sentinelpay.db-shm
 *.db
 *.sqlite
 *.sqlite3
@@ -38,7 +38,7 @@ ENV/
 # ── Logs ────────────────────────────────────────────────────
 logs/
 *.log
-sentinelx_*.log
+sentinelpay_*.log
 
 # ── OS & Editor Junk ────────────────────────────────────────
 .DS_Store
